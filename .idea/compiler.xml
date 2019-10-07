@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="post-service" />
         <module name="user-service" />
+        <module name="comment-service" />
         <module name="say-config-service" />
         <module name="say-service-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="comment-service" target="1.8" />
       <module name="post-service" target="1.8" />
       <module name="say-config-service" target="1.8" />
       <module name="say-service-registry" target="1.8" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="comment-service" options="-parameters" />
       <module name="post-service" options="-parameters" />
       <module name="say-config-service" options="-parameters" />
       <module name="say-service-registry" options="-parameters" />
