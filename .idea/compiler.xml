@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="post-service" />
-        <module name="user-service" />
-        <module name="comment-service" />
         <module name="say-config-service" />
         <module name="say-service-registry" />
+        <module name="comment-service" />
+        <module name="say-api" />
+        <module name="user-service" />
+        <module name="admin-api" />
+        <module name="post-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-api" target="1.8" />
       <module name="comment-service" target="1.8" />
       <module name="post-service" target="1.8" />
+      <module name="say-api" target="1.8" />
       <module name="say-config-service" target="1.8" />
       <module name="say-service-registry" target="1.8" />
       <module name="user-service" target="1.8" />
@@ -23,8 +27,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-api" options="-parameters" />
       <module name="comment-service" options="-parameters" />
       <module name="post-service" options="-parameters" />
+      <module name="say-api" options="-parameters" />
       <module name="say-config-service" options="-parameters" />
       <module name="say-service-registry" options="-parameters" />
       <module name="user-service" options="-parameters" />
